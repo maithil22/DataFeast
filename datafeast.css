@@ -124,6 +124,16 @@ article > header .title {
   font-weight: 600;
 }
 
+article > header .user {
+      float: right;
+      width: 48px;
+      height: 48px;
+      background-image: url('https://user-images.githubusercontent.com/47366736/72569342-40403180-38e0-11ea-9c27-c7a93b6a48ec.jpg');
+      @include border-radius(48px);
+      
+      margin-left: 20px;
+    }
+
 article > header .interval {
   float: right;
 }
