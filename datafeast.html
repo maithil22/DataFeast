@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DataFeast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0">
+    <link rel="stylesheet" href="datafeast.css">
+  </head>
+  <body>
+    <nav>
+      <header>OPENTAB</header>
+      <section>
+        <header>Overviews</header>
+        <ul>
+          <li class="active">Reports</li>
+          <li>Customers</li>
+          <li>Packages</li>
+        </ul>
+      </section>
+      <section>
+        <header>Account</header>
+        <ul>
+          <li>Activity</li>
+          <li data-value="4">Reviews</li>
+          
+        </ul>
+      </section>
+      <section>
+        <header>Categories</header>
+        <ul>
+          <li class="red">Week 3</li>
+          <li class="yellow">Week 2</li>
+          <li class="green">Week 1</li>
+          <li class="new"> <i class="fa fa-plus-circle"> </i> Add Category</li>
+        </ul>
+      </section>
+    </nav>
+    <article>
+      <header>
+        <div class="title">Dashboard</div>
+        <div class="user"></div>
+        <div class="interval">
+          <ul>
+            <li>Weekly</li>
+            <li class="active">Monthly</li>
+          </ul>
+        </div>
+      </header>
+      <section>
+        <div class="chart">
+          <canvas id="c1" width="900" height="200"></canvas>
+        </div>
+      </section>
+      <section>
+        <header>Weekly Revenues</header>
+        <div class="inlineChart">
+          <canvas id="c2" width="100" height="100"></canvas>
+          <div class="info">
+            <div class="value">80%</div>
+            <div class="title">Week 3</div>
+          </div>
+        </div>
+        <div class="inlineChart">
+          <canvas id="c3" width="100" height="100"></canvas>
+          <div class="info">
+            <div class="value">65%</div>
+            <div class="title">Week 2</div>
+          </div>
+        </div>
+        <div class="inlineChart">
+          <canvas id="c4" width="100" height="100"></canvas>
+          <div class="info">
+            <div class="value">40%</div>
+            <div class="title">Week 1</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>TODAY'S BEST SELLING</th>
+              <th>Quantity</th>
+              <th>Bill generated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chicken Tikka Masala</td>
+              <td>8</td>
+              <td>Rs 2,400</td>
+            </tr>
+            <tr>
+              <td>Panner Tikka</td>
+              <td>7</td>
+              <td>Rs 1,400</td>
+            </tr>
+            <tr>
+              <td>Pasta Arrabiata</td>
+              <td>5</td>
+              <td>Rs 1,250</td>
+            </tr>
+            <tr>
+              <td>Cheese-corn balls</td>
+              <td>4</td>
+              <td>Rs 600</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+
+    <script type="text/javascript">
+      var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+      {widgetcode:"ca1306b1e44dd10f2fda01b9a4d9aa280a909586343ac871e18d4866b072788464aa82915d8380aaec8f2985c72e1ef4", values:{},ready:function(){}};
+      var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+      s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+    <script src="datafeast.js" charset="utf-8"></script>
+  </body>
+</html>
